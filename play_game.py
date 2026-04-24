@@ -9,6 +9,7 @@ empty_src = os.path.join(folder, "empty.png")
 
 # 1. Reset everything to empty first to start fresh
 for i in range(9):
+    os.system(f"cp {folder}/empty.png {folder}/cell_{i}.png")
     os.system(f"cp {empty_src} {folder}/cell_{i}.png")
 
 # 2. Pick 6 unique random positions
